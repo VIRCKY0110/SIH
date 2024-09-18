@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Duniya - Home</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        /* Home Section */
+        #home {
+            height: 100vh;
+            background-image: url('img11.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        .logo img {
+            width: 400px;
+            height: 400px;
+            max-width: 100%;
+            height: auto;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 45px;
+        }
+
+        /* Button Group */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Button Styles */
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        button {
+            --button_radius: 0.75em;
+            --button_color: #e8e8e8;
+            --button_outline_color: #000000;
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: var(--button_radius);
+            padding: 0.75em 1.5em;
+            color: var(--button_outline_color);
+            background: var(--button_color);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-0.2em);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Overview Section */
+        #overview {
+            height: 100vh;
+            background-color: #ffe287;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #overview .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #overview h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        #overview .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature-box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Branches Section */
+        #branches-section {
+            height: 100vh;
+            background-image: url('img9.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #branches-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #branches-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-family: 'Courier New';
+        }
+
+        .branches-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007bff; /* Button color */
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .branches-btn:hover {
+            background-color: #0056b3; /* Button hover color */
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            #overview .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-box {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="logo">
+                <img src="logo2.png" alt="Logo" width="300" height="300">
+            </div>
+            <div class="main-content">
+                <h1>Elevate Education</h1>
+                <p>The Engineering Learning Hub</p>
+            </div>
+            <div class="button-group">
+                <a href="login.html">
+                    <button>Log In</button>
+                </a>
+                <a href="signup.html">
+                    <button>Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <div class="container">
+            <h2>Explore Our Features</h2>
+            <div class="features">
+                <div class="feature-box">
+                    <img src="https://images.unsplash.com/photo-1726092679831-ae0a4e21f072?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQwfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D" alt="Chatbot Icon">
+                    <h3>Interactive Chatbots</h3>
+                    <p>Our AI-driven chatbots are here to help you with instant responses, providing answers to your engineering queries 24/7.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="https://images.unsplash.com/photo-1726243204340-becde5d070db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D" alt="Resources Icon">
+                    <h3>Vast Learning Resources</h3>
+                    <p>Access a comprehensive library of engineering materials, tutorials, and subject notes to aid your studies.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="https://images.unsplash.com/photo-1726344603918-156e119eb6d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D" alt="Community Icon">
+                    <h3>Student Community</h3>
+                    <p>Collaborate with like-minded students, participate in forums, and work on projects together to build your skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches-section">
+        <div class="container">
+            <h2>Explore Engineering Branches</h2>
+            <a href="branches.html" class="branches-btn">Engineering Branches</a>
+        </div>
+    </section>
+
+    <!-- Chatbot Integration -->
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "bkw472VfdHFA0j6vsm8Ja",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="bkw472VfdHFA0j6vsm8Ja"
+        domain="www.chatbase.co"
+        defer>
+    </script>
+    <iframe
+        src="https://www.chatbase.co/chatbot-iframe/bkw472VfdHFA0j6vsm8Ja"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"
+    ></iframe>
+</body>
+</html>

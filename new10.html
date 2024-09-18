@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Split Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .split-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .split {
+            flex: 1;
+            position: relative;
+        }
+
+        .split img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Adding hover effect */
+        .split:hover {
+            opacity: 0.9;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="split-container">
+        <!-- Left side with the first image -->
+        <div class="split">
+            <a href="index.html">
+                <img src="https://www.springboard.com/blog/wp-content/uploads/2022/09/programmng-language.jpg" alt="Programming Skills">
+            </a>
+        </div>
+
+        <!-- Right side with the second image -->
+        <div class="split">
+            <a href="https://www.skillshub.com/blog/soft-skills-training/" target="_blank">
+                <img src="https://www.skillshub.com/wp-content/webp-express/webp-images/uploads/2023/04/collage-illustration.jpg.webp" alt="Soft Skills">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
